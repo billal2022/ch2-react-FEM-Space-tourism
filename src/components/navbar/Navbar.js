@@ -34,7 +34,7 @@ export default function Navbar(){
     <img onClick={updateMenu} src={closeicon} className="closeIcon" alt='closeLogo'/>
   </li>
  <li>
-  <NavLink onClick={updateMenu}   to={'/src/components/home'}> <span>00</span> HOME</NavLink>
+  <NavLink onClick={updateMenu}  to={'/ch2-react-FEM-Space-tourism'}> <span>00</span> HOME</NavLink>
  </li>
  <li>
    <NavLink onClick={updateMenu}  to={'/src/components/destination'}> <span>01</span> DESTINATION</NavLink>
@@ -49,7 +49,7 @@ export default function Navbar(){
 </header>
 
 <Routes>
-  <Route exact path='/src/components/home' element={<Home />}> </Route>
+  <Route  path='/ch2-react-FEM-Space-tourism' element={<Home />}> </Route>
   <Route path='/src/components/destination' element={<Destination />}> </Route>
   <Route path='/src/components/crew' element={<Crew />}> </Route>
   <Route path='/src/components/technology' element={<Technology  />}> </Route>

@@ -36,16 +36,12 @@ position: static;
 }
 .main{
     background: 50%/cover;
-
+    background-image:  url(../src//assets/home/background-home-desktop.jpg);
     min-height: 100vh;
     display: grid;
     grid-template-rows: max-content;
     gap: 50px;
   }
-  .main.home{
-    background-image:  url(../src//assets/home/background-home-desktop.jpg);
-
-}
 .main.destination{
     background-image: url(../src//assets/destination/background-destination-desktop.jpg);
 
