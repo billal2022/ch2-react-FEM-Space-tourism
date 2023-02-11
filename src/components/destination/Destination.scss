@@ -1,0 +1,138 @@
+.main-section{
+  display: grid;
+  grid: auto/1fr 1fr;
+
+  width: 83%;
+
+    margin: auto;
+    margin-block:5rem ;
+    @media (max-width: 1200px){
+      grid: auto/ 1fr;
+      gap: 10rem;
+
+    }
+    @media (max-width: 992px){
+      width: 88%;
+      margin-block: 5rem;
+    }
+ 
+    @media (max-width: 570px){
+      width: 85%;
+      
+    }
+ 
+}
+
+.left {
+  &__section {
+    align-self: center;
+    h1{
+      letter-spacing: 4px;
+      color: #F8FFFF;
+      font-weight: 300;
+      margin-bottom: 4rem;
+
+      span{
+        margin-right: 1rem;
+        font-weight: 700;
+        color: #494D56;
+      }
+    }
+    img{
+      width: 55%;
+    }
+  }
+}
+
+.right {
+  &__section {
+    button{
+      background-color: transparent;
+      border: 0;
+      color: white;
+      margin:0rem 1rem 3.1rem 0rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      cursor: pointer;
+      padding-bottom: 1rem;
+
+     &.active{
+  border-bottom: 3px solid white;
+      }
+    }
+.p-big {
+      text-transform: uppercase;
+      font-size: 4rem;
+      color: white;
+  
+    }
+    .p{
+      border-bottom: 0.001rem solid rgba(181, 181, 181, 0.2196078431);
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding-bottom: 7rem;
+      font-size: 1.3rem;
+      line-height: 1.8;
+
+    }
+    p{
+      line-height: 1.5;
+      font-weight: 100;
+    letter-spacing: 3px;
+    }
+  }
+  &__section-bottom {
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+  }
+  &__section-bottom-h {
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+    }
+  }
+
+
+
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
+}

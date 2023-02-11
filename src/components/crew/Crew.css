@@ -1,0 +1,94 @@
+.left__section {
+  margin-bottom: 1rem;
+}
+.left__section button {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(158, 158, 158, 0.231372549);
+  border: 0;
+  border-radius: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  cursor: pointer;
+  margin-right: 1.6rem;
+}
+.left__section button.active {
+  background-color: white;
+}
+.left__section h1:nth-child(3) {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 400;
+}
+@media (max-width: 992px) {
+  .left__section h1:nth-child(3) {
+    font-size: 1.5rem;
+  }
+}
+.left__section .p-big {
+  color: #8E9399;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.left__section .p {
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding-bottom: 7rem;
+  font-size: 1.3rem;
+}
+.left__section .btn {
+  display: flex;
+}
+
+.main-section_crew {
+  margin-block: 5rem;
+  width: 90%;
+  margin-left: 7rem;
+  display: grid;
+  grid: auto/1fr 1fr;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main-section_crew {
+    grid: auto/1fr 2fr;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 992px) {
+  .main-section_crew {
+    grid: auto/1fr;
+    margin-left: 0;
+    margin: auto;
+    gap: 4rem;
+    margin-top: 5rem;
+  }
+}
+.main-section_crew .right__section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.main-section_crew .right__section img {
+  position: absolute;
+  bottom: -79px;
+}
+@media (max-width: 992px) {
+  .main-section_crew .right__section img {
+    position: static;
+  }
+}
+.main-section_crew .right__section img[title="Mark Shuttleworth"] {
+  width: 50%;
+}
+.main-section_crew .right__section img[title="Douglas Hurley"] {
+  width: 55%;
+}
+.main-section_crew .right__section img[title="Anousheh Ansari"] {
+  width: 70%;
+}
+.main-section_crew .right__section img[title="Victor Glover"] {
+  width: 60%;
+}/*# sourceMappingURL=Crew.css.map */

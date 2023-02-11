@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #E1E3F8;
+}
+.p-small{
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+.p-big{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    color: white;
+}
+.title-head-m{
+    margin-bottom: 1rem;
+}
+.title-m{
+    margin-bottom: 2rem;
+}
+.left__section h1{
+&:nth-child(1){
+        position: absolute;
+    top: 240px;
+    
+    @media (max-width: 1200px){
+        position: static;
+    }
+}
+    &:nth-child(3){
+position: static;
+    }
+}
+.main{
+    background: 50%/cover;
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: max-content;
+    gap: 50px;
+  }
+  .main.home{
+    background-image:  url(../src//assets/home/background-home-desktop.jpg);
+
+}
+.main.destination{
+    background-image: url(../src//assets/destination/background-destination-desktop.jpg);
+
+}
+.main.crew{
+    background-image: url(../src//assets/crew/background-crew-desktop.jpg);
+
+}
+.main.technology{
+    background-image: url(../src//assets/technology/background-technology-desktop.jpg);
+
+}
+@media (max-width: 992px){
+    .main{
+        background-image: url(../src//assets/home/background-home-tablet.jpg);
+  
+      }
+    .main.destination{
+        background-image: url(../src//assets/destination/background-destination-tablet.jpg);
+    
+    }
+    .main.crew{
+        background-image: url(../src//assets/crew/background-crew-tablet.jpg);
+    
+    }
+    .main.technology{
+        background-image: url(../src//assets/technology/background-technology-tablet.jpg);
+    
+    }
+}
+@media (max-width: 576px) {
+    .main{
+        background-image: url(../src//assets/home/background-home-mobile.jpg);
+      }
+    .main.destination{
+        background-image: url(../src//assets/destination/background-destination-mobile.jpg);
+    
+    }
+    .main.crew{
+        background-image: url(../src//assets/crew/background-crew-mobile.jpg);
+    
+    }
+    .main.technology{
+        background-image: url(../src//assets/technology/background-technology-mobile.jpg);
+    
+    }
+}

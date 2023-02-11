@@ -1,0 +1,149 @@
+:root {
+  --light-grey-text:rgba(255, 255, 255, 0.76);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0px 0px 3rem;
+  overflow: hidden;
+  align-items: center;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*header navbar*/
+header .navbar {
+  list-style-type: none;
+  display: flex;
+  width: 60%;
+  gap: 30px;
+  height: 94px;
+  -webkit-backdrop-filter: blur(26px);
+          backdrop-filter: blur(26px);
+  background-color: rgba(128, 128, 128, 0.1019607843);
+  justify-content: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.closeIcon {
+  display: none;
+}
+
+header .navbar::after {
+  content: "";
+  width: 60%;
+  background-color: rgba(128, 128, 128, 0.431372549);
+  height: 0.01rem;
+  position: absolute;
+  right: 95%;
+  top: 50%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--light-grey-text);
+  letter-spacing: 3px;
+  font-size: large;
+}
+
+.navbar a:hover {
+  color: gray;
+}
+
+.navbar li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+li:where(:has(a.active)) {
+  border-bottom: 3px solid white;
+  border-top: 3px solid transparent;
+}
+
+.navbar span {
+  font-weight: 500;
+  color: white;
+  margin-right: 5px;
+}
+
+/** break points **/
+@media (max-width: 992px) {
+  header .navbar {
+    font-size: 0.44rem;
+    width: 444px;
+  }
+  header .navbar::after {
+    display: none;
+  }
+  .navbar span {
+    display: none;
+  }
+  header {
+    padding: 0rem 0px 0px 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar li {
+    height: 4rem;
+    align-items: flex-end;
+  }
+  .navbar li:nth-child(1) {
+    height: 7rem;
+    align-items: center;
+  }
+  .closeIcon {
+    display: block;
+    width: 2rem;
+    cursor: pointer;
+  }
+  header {
+    padding: 2rem 2rem 0px 2rem;
+    transition: transform 500ms;
+  }
+  header .navbar {
+    align-items: flex-end;
+    z-index: 9999;
+    justify-content: flex-start;
+    transition: transform 500ms;
+    gap: 0px;
+    height: 100%;
+    position: fixed;
+    font-size: 0.8rem;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    padding-inline: 2rem;
+    transition: transform 500ms;
+    width: 60%;
+  }
+  header .navbar.visible {
+    transform-origin: right;
+    transform: translateX(0px);
+  }
+  header .navbar.hidden {
+    transform: translateX(100%);
+    pointer-events: none;
+  }
+  .closeIcon.open {
+    display: block;
+  }
+  .closeIcon.close {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
