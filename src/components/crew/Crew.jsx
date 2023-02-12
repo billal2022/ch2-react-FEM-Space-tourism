@@ -1,14 +1,20 @@
 
 import {crew} from "../../assets/crew"
 import { useState } from 'react'
+import {motion }from "framer-motion"
 import "./Crew.css"
 export default function Crew() {
   const [people] = useState(crew)
 const [Link, setLink] = useState(0)
 const {name,images,role,bio}= people[Link]
   return (
-    < >
-    <section className="main-section_crew">
+
+    <motion.section 
+    className="main-section_crew"
+    initial={{width:0}}
+    animate={{width:"88%"}}
+    exit={{x:window.innerWidth, transition:{duration:0.4}}}
+    >
     <div className="left__section">
        <h1><span>02</span>MEET YOR CREW</h1>
         <h2 className="p-big">{role}</h2>
@@ -21,8 +27,7 @@ const {name,images,role,bio}= people[Link]
        <div className="right__section">
 <img src={images} alt={name} title={name} />
        </div>
-    </section>
-    
-          </>
+    </motion.section>
+  
   )
 }

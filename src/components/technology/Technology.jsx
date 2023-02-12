@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import {technology} from "../../assets/technology"
 import "./Technology.css"
-
+import {motion }from "framer-motion"
 export default function Technology() {
   const [rockets] = useState(technology)
   const [value, setValue] = useState(0)
@@ -10,7 +10,12 @@ export default function Technology() {
   const { name, images, description } = rockets[value]
   return (
     <>
-      <section className='main-section-technology'>
+      <motion.section 
+      className='main-section-technology'
+      initial={{width:0}}
+      animate={{width:"88%"}}
+      exit={{x:window.innerWidth, transition:{duration:0.4}}}
+      >
                <div className="left__section">
        <h1 className='left__section'><span>03</span>SPACE LAUNCH</h1>
 <div className='left__section-content'>
@@ -29,11 +34,11 @@ export default function Technology() {
 
        <div className='right__section'>
         <picture>
-          <source media="(max-width:992px )" srcset={images.landscape} />
+          <source media="(max-width:992px )" srcSet={images.landscape} />
         <img src={images.portrait} alt={name} title={name} />
         </picture>
        </div>
-      </section>
+      </motion.section>
 
     </>
   )

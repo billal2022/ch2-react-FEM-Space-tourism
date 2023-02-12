@@ -50,6 +50,8 @@
   letter-spacing: 3px;
   cursor: pointer;
   padding-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 100;
 }
 .right__section button.active {
   border-bottom: 3px solid white;

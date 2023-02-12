@@ -2,6 +2,7 @@
 import "./Destination.css"
 import {destination} from "../../assets/destination"
 import { useState } from 'react'
+import {motion }from "framer-motion"
 
 export default function Destination() {
   const [planets] = useState(destination)
@@ -11,7 +12,12 @@ export default function Destination() {
 
   return (
     < >
-<section className="main-section">
+<motion.section 
+    initial={{width:0}}
+    animate={{width:"88%"}}
+    exit={{x:window.innerWidth, transition:{duration:0.4}}}
+className="main-section"
+>
 <div className="left__section">
    <h1><span>01</span>PICK YOUR DESTINATON</h1>
       <img className="rotating" src={images} alt={name} title={name} />
@@ -33,7 +39,7 @@ export default function Destination() {
         </div>
       </div>
    </div>
-</section>
+</motion.section>
 
       </>
   )

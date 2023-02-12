@@ -14,12 +14,26 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     color: white;
+
 }
 .title-head-m{
     margin-bottom: 1rem;
 }
 .title-m{
     margin-bottom: 2rem;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100vw;
+    letter-spacing: 4px ;
+
+}
+.active{
+    opacity: 1;
+    transition: opacity 250ms ease-in;
 }
 .left__section h1{
 &:nth-child(1){

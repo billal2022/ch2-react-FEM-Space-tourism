@@ -1,8 +1,8 @@
-import React from 'react'
+
 import { NavLink,Link } from 'react-router-dom';
 import { useState } from 'react';
-import { Route, Routes } from 'react-router';
-import { Technology,Crew,Destination ,Home}from "../index"
+
+
 import "./Navbar.css"
 import closeicon from "../../assets/shared/icon-close.svg"
 import openicon from "../../assets/shared/icon-hamburger.svg"
@@ -27,7 +27,7 @@ export default function Navbar(){
   return (
   <>
 <header> 
-<Link  to={"/src/components/home"} onClick={updateMenu}><img src={logo} alt='' /></Link>
+<Link  to={"/ch2-react-FEM-Space-tourism"} onClick={updateMenu}><img src={logo} alt='' /></Link>
 <img onClick={updateMenu} src={openicon} className={open} alt="openLogo"/>
 <ul  className={menu_class}>
   <li>
@@ -48,12 +48,7 @@ export default function Navbar(){
 </ul>
 </header>
 
-<Routes>
-  <Route  path='/ch2-react-FEM-Space-tourism' element={<Home />}> </Route>
-  <Route path='/src/components/destination' element={<Destination />}> </Route>
-  <Route path='/src/components/crew' element={<Crew />}> </Route>
-  <Route path='/src/components/technology' element={<Technology  />}> </Route>
-</Routes>
+
 
 </>
   )
