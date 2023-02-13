@@ -3,7 +3,6 @@
   grid: auto/1fr 1fr;
   width: clamp(83%, 570px, 88%);
   margin: auto;
-  margin-block: 5rem;
 }
 @media (max-width: 1200px) {
   .main-section {
