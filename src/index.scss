@@ -35,19 +35,6 @@
     opacity: 1;
     transition: opacity 250ms ease-in;
 }
-.left__section h1{
-&:nth-child(1){
-        position: absolute;
-    top: 240px;
-    
-    @media (max-width: 1200px){
-        position: static;
-    }
-}
-    &:nth-child(3){
-position: static;
-    }
-}
 .main{
     background: 50%/cover;
     background-image:  url(../src//assets/home/background-home-desktop.jpg);
@@ -55,6 +42,7 @@ position: static;
     display: grid;
     grid-template-rows: max-content;
     gap: 50px;
+    overflow: hidden;
   }
 .main.destination{
     background-image: url(../src//assets/destination/background-destination-desktop.jpg);

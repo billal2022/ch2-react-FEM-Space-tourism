@@ -13,9 +13,10 @@ export default function Destination() {
   return (
     < >
 <motion.section 
-    initial={{width:0}}
-    animate={{width:"88%"}}
-    exit={{x:window.innerWidth, transition:{duration:0.4}}}
+      initial={{translateY:"100vh"}}
+      animate={{translateY:"0vh"}}
+      exit={{translateY:"100vh"}}
+    transition="1"
 className="main-section"
 >
 <div className="left__section">

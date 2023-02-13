@@ -12,9 +12,10 @@ export default function Technology() {
     <>
       <motion.section 
       className='main-section-technology'
-      initial={{width:0}}
-      animate={{width:"88%"}}
-      exit={{x:window.innerWidth, transition:{duration:0.4}}}
+      initial={{translateY:"100vh"}}
+      animate={{translateY:"0vh"}}
+      exit={{translateY:"100vh"}}
+    transition="1"
       >
                <div className="left__section">
        <h1 className='left__section'><span>03</span>SPACE LAUNCH</h1>

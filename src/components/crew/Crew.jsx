@@ -11,9 +11,10 @@ const {name,images,role,bio}= people[Link]
 
     <motion.section 
     className="main-section_crew"
-    initial={{width:0}}
-    animate={{width:"88%"}}
-    exit={{x:window.innerWidth, transition:{duration:0.4}}}
+    initial={{translateY:"100vh"}}
+    animate={{translateY:"0vh"}}
+    exit={{translateY:"100vh"}}
+  transition="1"
     >
     <div className="left__section">
        <h1><span>02</span>MEET YOR CREW</h1>

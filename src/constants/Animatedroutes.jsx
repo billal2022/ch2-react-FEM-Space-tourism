@@ -10,7 +10,7 @@ const  Technology = lazy(()=>import("../components/technology/Technology"))
 function Animatedroutes() {
     const location = useLocation();
   return (
-<AnimatePresence>
+<AnimatePresence exitBeforeEnter>
   <Routes location={location} key={location.pathname}>
   <Route  path='/ch2-react-FEM-Space-tourism' element={<Home />}> </Route>
   <Route path='/src/components/destination' element={<Destination />}> </Route>

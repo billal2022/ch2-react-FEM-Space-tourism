@@ -2,25 +2,16 @@
   display: grid;
   grid: auto/1fr 1fr;
 
-  width: 83%;
+  width:clamp(83%,570px,88%) ;
 
     margin: auto;
     margin-block:5rem ;
+    
     @media (max-width: 1200px){
       grid: auto/ 1fr;
       gap: 10rem;
+    }
 
-    }
-    @media (max-width: 992px){
-      width: 88%;
-      margin-block: 5rem;
-    }
- 
-    @media (max-width: 570px){
-      width: 85%;
-      
-    }
- 
 }
 
 .left {

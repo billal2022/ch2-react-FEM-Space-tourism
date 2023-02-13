@@ -1,15 +1,16 @@
 import React from 'react'
 import "./Home.css"
 import { Link } from 'react-router-dom';
-import {motion }from "framer-motion"
+import {motion as m}from "framer-motion"
 export default function Home() {
   return (
-   < >
+   <>
     
-    <motion.div 
-    initial={{width:0}}
-    animate={{width:"88%"}}
-    exit={{x:window.innerWidth, transition:{duration:0.4}}}
+    <m.div
+      initial={{translateY:"100vh"}}
+      animate={{translateY:"0vh"}}
+      exit={{translateY:"100vh"}}
+    transition="1"
     className="home-section">
    <section className="left-home p-small">
      <h2 className="home-left-title">So, you want to travel to</h2>
@@ -26,7 +27,7 @@ export default function Home() {
      <div className="right-home">
        <button ><Link className='p-big' to={"/src/components/destination"}>Explore</Link></button>
      </div>
- </motion.div>
+ </m.div>
  </>
   )
 }

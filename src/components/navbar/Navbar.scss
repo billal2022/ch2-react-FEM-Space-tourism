@@ -109,13 +109,13 @@
     }
     header {
       padding: 2rem 2rem 0px 2rem;
-      transition: transform 500ms;  
+
   }
   header .navbar{
     align-items: flex-end;
     z-index: 9999;
 justify-content: flex-start;
-    transition: transform 500ms;  
+
     gap: 0px;
     height: 100%;
     position: fixed;
@@ -124,7 +124,7 @@ justify-content: flex-start;
     right: 0;
     flex-direction: column;
     padding-inline: 2rem;
-    transition: transform 500ms;
+    transition: transform 300ms;
     width: 60%;
   &.visible{
     transform-origin: right;  transform: translateX(0px);
