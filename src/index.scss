@@ -36,8 +36,8 @@
     transition: opacity 250ms ease-in;
 }
 .main{
-    background: 50%/cover;
-    background-image:  url(../src/assets/home/background-home-desktop.png);
+
+    background:  url(../src/assets/home/background-home-desktop.png) 50%/cover;
     min-height: 100vh;
     display: grid;
     grid-template-rows: max-content;
@@ -45,16 +45,16 @@
     overflow: hidden;
   }
 .main.destination{
-    background-image: url(../src/assets/destination/background-destination-desktop.png);
-    flex: 1
+    background: url(../src/assets/destination/background-destination-desktop.png) 50%/cover;
+
 }
 .main.crew{
-    background-image: url(../src/assets/crew/background-crew-desktop.png);
-    flex: 1
+    background: url(../src/assets/crew/background-crew-desktop.png) 50%/cover;
+
 }
 .main.technology{
-    background-image: url(../src/assets/technology/background-technology-desktop.png);
-    flex: 1
+    background: url(../src/assets/technology/background-technology-desktop.png) 50%/cover;
+
 }
 @media (max-width: 992px){
     .main{

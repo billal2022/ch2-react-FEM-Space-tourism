@@ -15,7 +15,7 @@ function App() {
 
 
 <Suspense fallback={<div className='loading'><h1>Loading...</h1></div>}>
-  <Navbar  />
+  <Navbar   />
 <Animatedroutes />
 </Suspense>
 
